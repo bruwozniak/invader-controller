@@ -1,12 +1,12 @@
-package com.smarthome.controller.ui
+package com.invader.controller.ui
 
 import android.app.Activity
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import com.smarthome.controller.R
-import com.smarthome.controller.settings.SettingManager
+import com.invader.controller.R
+import com.invader.controller.settings.SettingManager
 import kotlinx.android.synthetic.main.activity_settings.*
 
 class SettingsActivity : AppCompatActivity() {

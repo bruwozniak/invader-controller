@@ -1,4 +1,4 @@
-package com.smarthome.controller.settings
+package com.invader.controller.settings
 
 import android.content.Context
 import android.preference.PreferenceManager
