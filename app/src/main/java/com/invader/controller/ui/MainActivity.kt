@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.MotionEvent
 import androidx.appcompat.app.AppCompatActivity
 import com.invader.controller.R
 import com.invader.controller.settings.SettingManager
@@ -53,7 +54,36 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupUI() {
         button_1.setOnClickListener {
-            invader?.send("hello from android")
+            invader?.send("1")
+        }
+        button_2.setOnClickListener {
+            invader?.send("2")
+        }
+        button_3.setOnClickListener {
+            invader?.send("3")
+        }
+        button_4.setOnClickListener {
+            invader?.send("4")
+        }
+        button_5.setOnClickListener {
+            invader?.send("5")
+        }
+        button_6.setOnClickListener {
+            invader?.send("6")
+        }
+        button_7.setOnClickListener {
+            invader?.send("7")
+        }
+        button_8.setOnTouchListener { _, motionEvent ->
+            when (motionEvent.action){
+                MotionEvent.ACTION_DOWN -> {
+                    invader?.send("8")
+                }
+                MotionEvent.ACTION_UP -> {
+                    invader?.send("0")
+                }
+            }
+            true
         }
     }
 }
